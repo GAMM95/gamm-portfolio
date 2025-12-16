@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/gamm-portfolio/static/css/main.3130ff71.css",
-    "main.js": "/gamm-portfolio/static/js/main.963e2a26.js",
+    "main.css": "/gamm-portfolio/static/css/main.dbcc00d8.css",
+    "main.js": "/gamm-portfolio/static/js/main.1960f5d9.js",
     "static/media/PrediHipertension.apk": "/gamm-portfolio/static/media/PrediHipertension.43633968bc71c328e34a.apk",
     "static/media/conversor.zip": "/gamm-portfolio/static/media/conversor.c79772d29c78e818233b.zip",
     "static/media/predihipertension.png": "/gamm-portfolio/static/media/predihipertension.7d570d87b89fdac4226b.png",
     "static/media/perfil.png": "/gamm-portfolio/static/media/perfil.b181b2d734c29cdb2588.png",
     "static/media/barberia-alura.png": "/gamm-portfolio/static/media/barberia-alura.91b6893eaa932734b55f.png",
     "static/media/transportes.png": "/gamm-portfolio/static/media/transportes.d29d2c45a2f30451cb42.png",
+    "static/media/CV_Jhonatan_Mantilla.pdf": "/gamm-portfolio/static/media/CV_Jhonatan_Mantilla.d58737a501b50440d9b2.pdf",
     "static/media/conversor.png": "/gamm-portfolio/static/media/conversor.45e18bf6c169d3bcd234.png",
-    "static/media/CV_Mantilla_Miñano_Jhonatan.pdf": "/gamm-portfolio/static/media/CV_Mantilla_Miñano_Jhonatan.6c9a7a05553c96770400.pdf",
+    "static/media/matriz-correlacion.png": "/gamm-portfolio/static/media/matriz-correlacion.9bea19917b262b0bc2bd.png",
     "static/media/incidencias.png": "/gamm-portfolio/static/media/incidencias.9272f40792cdfb38d893.png",
     "static/media/challenge-encriptador.png": "/gamm-portfolio/static/media/challenge-encriptador.443ddcbb74815f6bcef5.png",
     "static/media/gamm-logo.ico": "/gamm-portfolio/static/media/gamm-logo.da874e5bc956403cd4e0.ico",
@@ -17,11 +18,11 @@
     "static/media/send.svg": "/gamm-portfolio/static/media/send.585d74e8587389551779d951f25bc1cc.svg",
     "static/media/files.svg": "/gamm-portfolio/static/media/files.c7a30b70ac5a9118ccfd718aded479ca.svg",
     "index.html": "/gamm-portfolio/index.html",
-    "main.3130ff71.css.map": "/gamm-portfolio/static/css/main.3130ff71.css.map",
-    "main.963e2a26.js.map": "/gamm-portfolio/static/js/main.963e2a26.js.map"
+    "main.dbcc00d8.css.map": "/gamm-portfolio/static/css/main.dbcc00d8.css.map",
+    "main.1960f5d9.js.map": "/gamm-portfolio/static/js/main.1960f5d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.3130ff71.css",
-    "static/js/main.963e2a26.js"
+    "static/css/main.dbcc00d8.css",
+    "static/js/main.1960f5d9.js"
   ]
 }
