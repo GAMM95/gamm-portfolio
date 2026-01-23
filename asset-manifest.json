@@ -1,28 +1,41 @@
 {
   "files": {
-    "main.css": "/gamm-portfolio/static/css/main.dbcc00d8.css",
-    "main.js": "/gamm-portfolio/static/js/main.1960f5d9.js",
+    "main.css": "/gamm-portfolio/static/css/main.258d9c08.css",
+    "main.js": "/gamm-portfolio/static/js/main.4394476b.js",
     "static/media/PrediHipertension.apk": "/gamm-portfolio/static/media/PrediHipertension.43633968bc71c328e34a.apk",
     "static/media/conversor.zip": "/gamm-portfolio/static/media/conversor.c79772d29c78e818233b.zip",
     "static/media/predihipertension.png": "/gamm-portfolio/static/media/predihipertension.7d570d87b89fdac4226b.png",
     "static/media/perfil.png": "/gamm-portfolio/static/media/perfil.b181b2d734c29cdb2588.png",
     "static/media/barberia-alura.png": "/gamm-portfolio/static/media/barberia-alura.91b6893eaa932734b55f.png",
     "static/media/transportes.png": "/gamm-portfolio/static/media/transportes.d29d2c45a2f30451cb42.png",
-    "static/media/CV_Jhonatan_Mantilla.pdf": "/gamm-portfolio/static/media/CV_Jhonatan_Mantilla.d58737a501b50440d9b2.pdf",
     "static/media/conversor.png": "/gamm-portfolio/static/media/conversor.45e18bf6c169d3bcd234.png",
     "static/media/matriz-correlacion.png": "/gamm-portfolio/static/media/matriz-correlacion.9bea19917b262b0bc2bd.png",
+    "static/media/CV_Jhonatan_Mantilla.pdf": "/gamm-portfolio/static/media/CV_Jhonatan_Mantilla.d2e3db3d381c08bc2fcb.pdf",
+    "static/media/api.png": "/gamm-portfolio/static/media/api.c2aeeaf9b939083a0c87.png",
     "static/media/incidencias.png": "/gamm-portfolio/static/media/incidencias.9272f40792cdfb38d893.png",
     "static/media/challenge-encriptador.png": "/gamm-portfolio/static/media/challenge-encriptador.443ddcbb74815f6bcef5.png",
     "static/media/gamm-logo.ico": "/gamm-portfolio/static/media/gamm-logo.da874e5bc956403cd4e0.ico",
+    "static/media/postgresqlIcon.svg": "/gamm-portfolio/static/media/postgresqlIcon.9aed68683d15cfc3c3fd8ddf1d89ff4e.svg",
+    "static/media/sqlIcon.svg": "/gamm-portfolio/static/media/sqlIcon.a7067daeaeaca7348c439479a48f600a.svg",
+    "static/media/reactIcon.svg": "/gamm-portfolio/static/media/reactIcon.598d90dd4f36234e376cbc6ccd571550.svg",
+    "static/media/mysqlIcon.svg": "/gamm-portfolio/static/media/mysqlIcon.7d3a75394cf948e1e19471a97ae7763a.svg",
+    "static/media/phpIcon.svg": "/gamm-portfolio/static/media/phpIcon.9fe2cf233d5e95fbf5827bdbaf13f428.svg",
     "static/media/hand.svg": "/gamm-portfolio/static/media/hand.224ba8f9af2a0a95e7ee12f22e59855c.svg",
+    "static/media/javaIcon.svg": "/gamm-portfolio/static/media/javaIcon.3d1f1777f72c1a4ca3003a5378491322.svg",
+    "static/media/mongoIcon.svg": "/gamm-portfolio/static/media/mongoIcon.eb842895e80bd61dd471f2b70345feab.svg",
+    "static/media/pythonIcon.svg": "/gamm-portfolio/static/media/pythonIcon.4298525c028749eb4fa154f8f5bd1931.svg",
+    "static/media/javascriptIcon.svg": "/gamm-portfolio/static/media/javascriptIcon.0866c81b3b841c647e23b8a5d991c312.svg",
     "static/media/send.svg": "/gamm-portfolio/static/media/send.585d74e8587389551779d951f25bc1cc.svg",
     "static/media/files.svg": "/gamm-portfolio/static/media/files.c7a30b70ac5a9118ccfd718aded479ca.svg",
+    "static/media/angularIcon.svg": "/gamm-portfolio/static/media/angularIcon.731e1535babc4225f9deaa9108718461.svg",
+    "static/media/springIcon.svg": "/gamm-portfolio/static/media/springIcon.4075d0e0bcbcb1988713ccf4ab5ceb71.svg",
     "index.html": "/gamm-portfolio/index.html",
-    "main.dbcc00d8.css.map": "/gamm-portfolio/static/css/main.dbcc00d8.css.map",
-    "main.1960f5d9.js.map": "/gamm-portfolio/static/js/main.1960f5d9.js.map"
+    "static/media/tailwindIcon.svg": "/gamm-portfolio/static/media/tailwindIcon.973c73e85d4daa24b257ba20298716c4.svg",
+    "main.258d9c08.css.map": "/gamm-portfolio/static/css/main.258d9c08.css.map",
+    "main.4394476b.js.map": "/gamm-portfolio/static/js/main.4394476b.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbcc00d8.css",
-    "static/js/main.1960f5d9.js"
+    "static/css/main.258d9c08.css",
+    "static/js/main.4394476b.js"
   ]
 }
