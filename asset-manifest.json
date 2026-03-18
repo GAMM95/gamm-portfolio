@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gamm-portfolio/static/css/main.713afb1b.css",
-    "main.js": "/gamm-portfolio/static/js/main.d799ab6f.js",
+    "main.js": "/gamm-portfolio/static/js/main.070f7a92.js",
     "static/media/PrediHipertension.apk": "/gamm-portfolio/static/media/PrediHipertension.43633968bc71c328e34a.apk",
     "static/media/demo_incidencias.mp4": "/gamm-portfolio/static/media/demo_incidencias.d8286ac5ac4cc5c768bc.mp4",
     "static/media/demo_predihipertension.mp4": "/gamm-portfolio/static/media/demo_predihipertension.7fa132da49027700ab79.mp4",
@@ -42,10 +42,10 @@
     "index.html": "/gamm-portfolio/index.html",
     "static/media/tailwindIcon.svg": "/gamm-portfolio/static/media/tailwindIcon.03fdecbfd26561a058e76b84d95184a7.svg",
     "main.713afb1b.css.map": "/gamm-portfolio/static/css/main.713afb1b.css.map",
-    "main.d799ab6f.js.map": "/gamm-portfolio/static/js/main.d799ab6f.js.map"
+    "main.070f7a92.js.map": "/gamm-portfolio/static/js/main.070f7a92.js.map"
   },
   "entrypoints": [
     "static/css/main.713afb1b.css",
-    "static/js/main.d799ab6f.js"
+    "static/js/main.070f7a92.js"
   ]
 }
