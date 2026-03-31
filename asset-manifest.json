@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/gamm-portfolio/static/css/main.713afb1b.css",
-    "main.js": "/gamm-portfolio/static/js/main.070f7a92.js",
+    "main.js": "/gamm-portfolio/static/js/main.c3585f86.js",
     "static/media/PrediHipertension.apk": "/gamm-portfolio/static/media/PrediHipertension.43633968bc71c328e34a.apk",
     "static/media/demo_incidencias.mp4": "/gamm-portfolio/static/media/demo_incidencias.d8286ac5ac4cc5c768bc.mp4",
     "static/media/demo_predihipertension.mp4": "/gamm-portfolio/static/media/demo_predihipertension.7fa132da49027700ab79.mp4",
     "static/media/conversor.zip": "/gamm-portfolio/static/media/conversor.c79772d29c78e818233b.zip",
     "static/media/APIWine.png": "/gamm-portfolio/static/media/APIWine.ac254e63dd424e81f33e.png",
     "static/media/APIHotel.png": "/gamm-portfolio/static/media/APIHotel.08d7215799178e317f5a.png",
+    "static/media/viña1.png": "/gamm-portfolio/static/media/viña1.65d8e4e2663378c605af.png",
     "static/media/incidencias1.png": "/gamm-portfolio/static/media/incidencias1.413651d24b45afdf0596.png",
     "static/media/analytics_hta.png": "/gamm-portfolio/static/media/analytics_hta.24f116ccf40e363f6c31.png",
     "static/media/APIRentas.png": "/gamm-portfolio/static/media/APIRentas.72fe2aef002c3228ee9b.png",
@@ -15,12 +16,19 @@
     "static/media/perfil.png": "/gamm-portfolio/static/media/perfil.b181b2d734c29cdb2588.png",
     "static/media/transportes.png": "/gamm-portfolio/static/media/transportes.d29d2c45a2f30451cb42.png",
     "static/media/conversor.png": "/gamm-portfolio/static/media/conversor.45e18bf6c169d3bcd234.png",
+    "static/media/viña10.png": "/gamm-portfolio/static/media/viña10.8657051e1e59c5f841f0.png",
+    "static/media/viña8.png": "/gamm-portfolio/static/media/viña8.4fe1592bef98c794dd64.png",
     "static/media/incidencias7.png": "/gamm-portfolio/static/media/incidencias7.8e51cf8838875d358396.png",
     "static/media/incidencias4.png": "/gamm-portfolio/static/media/incidencias4.81aa71016b596afa1c79.png",
     "static/media/CV_Jhonatan_Mantilla.pdf": "/gamm-portfolio/static/media/CV_Jhonatan_Mantilla.d2e3db3d381c08bc2fcb.pdf",
     "static/media/incidencias5.png": "/gamm-portfolio/static/media/incidencias5.588c85b14ff84fedae92.png",
+    "static/media/viña3.png": "/gamm-portfolio/static/media/viña3.a30b46f1fa1e1985662f.png",
+    "static/media/viña5.png": "/gamm-portfolio/static/media/viña5.8fbd2662395b6ab63348.png",
+    "static/media/viña4.png": "/gamm-portfolio/static/media/viña4.6ad56674d84b2cc1355c.png",
     "static/media/incidencias.png": "/gamm-portfolio/static/media/incidencias.9272f40792cdfb38d893.png",
     "static/media/incidencias3.png": "/gamm-portfolio/static/media/incidencias3.d256048dfdfa851e9df4.png",
+    "static/media/viña9.png": "/gamm-portfolio/static/media/viña9.14149ca5e30efce7930a.png",
+    "static/media/viña6.png": "/gamm-portfolio/static/media/viña6.c0b8fd543e0846024bd5.png",
     "static/media/incidencias6.png": "/gamm-portfolio/static/media/incidencias6.8e71b624f84adcb2d279.png",
     "static/media/incidencias2.png": "/gamm-portfolio/static/media/incidencias2.1b98e3f601613760ed25.png",
     "static/media/challenge-encriptador.png": "/gamm-portfolio/static/media/challenge-encriptador.443ddcbb74815f6bcef5.png",
@@ -42,10 +50,10 @@
     "index.html": "/gamm-portfolio/index.html",
     "static/media/tailwindIcon.svg": "/gamm-portfolio/static/media/tailwindIcon.03fdecbfd26561a058e76b84d95184a7.svg",
     "main.713afb1b.css.map": "/gamm-portfolio/static/css/main.713afb1b.css.map",
-    "main.070f7a92.js.map": "/gamm-portfolio/static/js/main.070f7a92.js.map"
+    "main.c3585f86.js.map": "/gamm-portfolio/static/js/main.c3585f86.js.map"
   },
   "entrypoints": [
     "static/css/main.713afb1b.css",
-    "static/js/main.070f7a92.js"
+    "static/js/main.c3585f86.js"
   ]
 }
