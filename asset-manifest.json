@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/gamm-portfolio/static/css/main.713afb1b.css",
-    "main.js": "/gamm-portfolio/static/js/main.c3585f86.js",
+    "main.js": "/gamm-portfolio/static/js/main.c7382322.js",
     "static/media/PrediHipertension.apk": "/gamm-portfolio/static/media/PrediHipertension.43633968bc71c328e34a.apk",
     "static/media/demo_incidencias.mp4": "/gamm-portfolio/static/media/demo_incidencias.d8286ac5ac4cc5c768bc.mp4",
     "static/media/demo_predihipertension.mp4": "/gamm-portfolio/static/media/demo_predihipertension.7fa132da49027700ab79.mp4",
     "static/media/conversor.zip": "/gamm-portfolio/static/media/conversor.c79772d29c78e818233b.zip",
-    "static/media/APIWine.png": "/gamm-portfolio/static/media/APIWine.ac254e63dd424e81f33e.png",
     "static/media/APIHotel.png": "/gamm-portfolio/static/media/APIHotel.08d7215799178e317f5a.png",
+    "static/media/APIWine.png": "/gamm-portfolio/static/media/APIWine.d46857a1667b0497c5e8.png",
     "static/media/viña1.png": "/gamm-portfolio/static/media/viña1.65d8e4e2663378c605af.png",
+    "static/media/Apivet1.png": "/gamm-portfolio/static/media/Apivet1.2a9350e97ba022fcf960.png",
     "static/media/incidencias1.png": "/gamm-portfolio/static/media/incidencias1.413651d24b45afdf0596.png",
     "static/media/analytics_hta.png": "/gamm-portfolio/static/media/analytics_hta.24f116ccf40e363f6c31.png",
     "static/media/APIRentas.png": "/gamm-portfolio/static/media/APIRentas.72fe2aef002c3228ee9b.png",
@@ -50,10 +51,10 @@
     "index.html": "/gamm-portfolio/index.html",
     "static/media/tailwindIcon.svg": "/gamm-portfolio/static/media/tailwindIcon.03fdecbfd26561a058e76b84d95184a7.svg",
     "main.713afb1b.css.map": "/gamm-portfolio/static/css/main.713afb1b.css.map",
-    "main.c3585f86.js.map": "/gamm-portfolio/static/js/main.c3585f86.js.map"
+    "main.c7382322.js.map": "/gamm-portfolio/static/js/main.c7382322.js.map"
   },
   "entrypoints": [
     "static/css/main.713afb1b.css",
-    "static/js/main.c3585f86.js"
+    "static/js/main.c7382322.js"
   ]
 }
