@@ -5,7 +5,7 @@ import { skillsTabs, skillsContent } from "./skillsData";
 const Skills = () => {
   const [activeTab, setActiveTab] = useState(skillsTabs[0].id);
 
-  const currentTab    = skillsTabs.find((t) => t.id === activeTab);
+  const currentTab = skillsTabs.find((t) => t.id === activeTab);
   const currentSkills = skillsContent[activeTab] ?? [];
 
   // Re-trigger AOS cada vez que cambia el tab
@@ -45,21 +45,28 @@ const Skills = () => {
       >
         {skillsTabs.map((tab) => {
           const Icon = tab.icon;
+
           return (
             <button
               key={tab.id}
               onClick={() => handleTab(tab.id)}
-              className={`btn-tab inline-flex items-center gap-2 ${
-                activeTab === tab.id ? "active" : ""
-              }`}
+              className={`
+          inline-flex items-center gap-2
+          px-5 py-2 rounded-full
+          text-sm sm:text-base font-medium
+          transition-all duration-300
+          ${activeTab === tab.id
+                  ? "bg-[var(--button-color)] text-[var(--container-color)] shadow-lg"
+                  : "bg-[var(--card-color)] text-[var(--text-color)] hover:bg-[var(--hover-color)]"
+                }
+        `}
             >
-              <Icon size={14} aria-hidden="true" />
+              <Icon size={16} />
               {tab.title}
             </button>
           );
         })}
       </div>
-
       {/* Category header */}
       <div className="text-center mb-8">
         <p

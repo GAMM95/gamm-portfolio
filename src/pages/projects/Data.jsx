@@ -51,7 +51,7 @@ export const projectsData = [
     date: "2024-10-11",
     title: 'Sistema de Gestión de Incidencias Informáticas',
     technologies: 'PHP 7.4.8 - JavaScript - Tailwind CSS - SQL Server 2008 R2',
-    category: 'Web',
+    category: 'Web App',
     github: 'https://github.com/GAMM95/incidenciasMDE',
     demo: 'https://youtu.be/wqomEDcPOXU',
     description: 'Sistema web en línea de gestión de incidencias para la Municipalidad Distrital de La Esperanza. Este sistema permite a los usuarios registrar, consultar, mostrar reportes de las incidencias ocurridas en cada área de la entidad descentralizando el proceso de gestión de incidencias Para ingresar al sistema utilice las credenciales username: admin y contraseña: admin123'
@@ -87,7 +87,7 @@ export const projectsData = [
     date: "2023-10-13",
     title: 'Sistema de Consulta de Transportes para Vehículos Menores Motorizados',
     technologies: 'PHP 8.2.4- HTML - JavaScript - Tailwind - SQL Server',
-    category: 'Web',
+    category: 'Web App',
     github: 'https://github.com/GAMM95/consulta-transportes',
     // demo: 'http://200.233.44.136/consulta_transporte/',
     description: 'Sistema web en línea de consultas de transportes para la Sub Gerencia de Transportes, Tránsito y Seguridad Vial de la Municipalidad Distrital de La Esperanza. Este sistema permite a los inspectores de tránsito hacer consultas de las tarjetas de circulación vigentes, papeletas impuestas sin pagar y paraderos establecidos correspondientes al vehiculo menor motorizado ingresando la placa. Para ingresar al sistema utilice las credenciales username: gamm y contraseña: 123456'
@@ -152,8 +152,8 @@ export const projectsData = [
     ],
     date: "2026-01-25",
     title: 'Viña Cascas',
-    technologies: 'Angular 21 - TypeScript - Bootstrap',
-    category: 'Web',
+    technologies: 'Java 17 - Spring Boot - MySql - Angular 21 - TypeScript - Bootstrap',
+    category: 'Web App',
     github: 'https://github.com/GAMM95/vinos_front.git',
     // demo: 'https://vinos-app.herokuapp.com/',
     description: 'Aplicación web para la gestión de una tienda de vinos. Permite la administración de productos, categorías, precios, pedidos y ventas. Esta aplicación se desarrolló utilizando Angular 21 y Bootstrap.',
@@ -177,10 +177,10 @@ export const projectsNav = [
     name: 'Todos',
   },
   {
-    name: 'Web',
+    name: 'APIs',
   },
   {
-    name: 'APIs',
+    name: 'Web App',
   },
   {
     name: 'Otros',

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../assets/gamm-logo.ico";
+import logoDark from "../../assets/gamm-logo2.ico";
 
 /**
  * Props:
@@ -63,7 +64,11 @@ const Header = ({ isDark, toggleTheme }) => {
 
         {/* Logo */}
         <a href="#inicio" className="flex items-center shrink-0">
-          <img src={logo} alt="GAMM logo" className="w-14 md:w-12 max-md:w-10" />
+          <img
+           src={isDark ? logoDark : logo} 
+           alt="GAMM logo" 
+           className="w-14 md:w-12 max-md:w-10" 
+           />
         </a>
 
         {/* Desktop: nav + theme toggle */}

@@ -85,12 +85,12 @@ export const timelineData = [
   {
     id: 9,
     type: "experience",
-    title: "Viña Cascas",
-    subtitle: "Desarrollo freelance",
+    title: "Desarrollador freelance",
+    subtitle: "Proyecto Web App Viña Cascas",
     place: "Trujillo",
-    date: "Dic 2025 - Actualidad",
+    date: "Dic 2025 - Abri 2026",
     startDate: "2025-12-12",
-    endDate: null,
+    endDate: "2026-04-30",
   },
   {
     id: 10,
@@ -102,4 +102,14 @@ export const timelineData = [
     startDate: "2025-11-01",
     endDate: "2026-01-25",
   },
+  {
+    id: 11,
+    type: "experience",
+    title: "Desarrollador freelance",
+    subtitle: "Proyecto Web App Veterinaria",
+    place: "Trujillo",
+    date: "May 2026 - Actualidad",
+    startDate: "2026-05-15",
+    endDate: null,
+  }
 ];

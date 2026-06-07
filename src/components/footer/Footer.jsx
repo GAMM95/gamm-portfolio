@@ -1,10 +1,10 @@
 const Footer = () => {
   const navLinks = [
-    { href: "#inicio",      label: "Inicio"      },
+    // { href: "#inicio",      label: "Inicio"      },
     { href: "#habilidades", label: "Habilidades" },
     { href: "#proyectos",   label: "Proyectos"   },
-    { href: "#formacion",   label: "Formación"   },
-    { href: "#contacto",    label: "Contacto"    },
+    // { href: "#formacion",   label: "Formación"   },
+    // { href: "#contacto",    label: "Contacto"    },
   ];
 
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
               className="text-lg font-semibold tracking-wide"
               style={{ color: "var(--title-color)" }}
             >
-              GAMM
+              PORTAFOLIO
             </h2>
             <span className="text-xs" style={{ color: "var(--disabled-color)" }}>
               Jhonatan Mantilla · Desarrollador Backend

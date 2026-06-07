@@ -39,13 +39,22 @@ const Work = () => {
         className="flex flex-wrap justify-center gap-3 mb-8"
       >
         {projectsNav.map((navItem, index) => (
-          <span
+          <button
             key={index}
             onClick={(e) => handleClick(e, index)}
-            className={`btn-tab cursor-pointer ${active === index ? "active" : ""}`}
+            className={`
+        px-5 py-2 rounded-full
+        text-sm sm:text-base font-medium
+        transition-all duration-300
+        cursor-pointer
+        ${active === index
+                ? "bg-[var(--button-color)] text-[var(--container-color)] shadow-lg"
+                : "bg-[var(--card-color)] text-[var(--text-color)] hover:bg-[var(--hover-color)]"
+              }
+      `}
           >
             {navItem.name}
-          </span>
+          </button>
         ))}
       </div>
 
