@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gamm-portfolio/static/css/main.11eb45a3.css",
-    "main.js": "/gamm-portfolio/static/js/main.f63f9202.js",
+    "main.css": "/gamm-portfolio/static/css/main.f7a12876.css",
+    "main.js": "/gamm-portfolio/static/js/main.9bd746de.js",
     "static/media/PrediHipertension.apk": "/gamm-portfolio/static/media/PrediHipertension.43633968bc71c328e34a.apk",
     "static/media/APIHotel.png": "/gamm-portfolio/static/media/APIHotel.08d7215799178e317f5a.png",
     "static/media/APIWine.png": "/gamm-portfolio/static/media/APIWine.d46857a1667b0497c5e8.png",
@@ -45,11 +45,11 @@
     "static/media/springIcon.svg": "/gamm-portfolio/static/media/springIcon.4075d0e0bcbcb1988713ccf4ab5ceb71.svg",
     "index.html": "/gamm-portfolio/index.html",
     "static/media/tailwindIcon.svg": "/gamm-portfolio/static/media/tailwindIcon.03fdecbfd26561a058e76b84d95184a7.svg",
-    "main.11eb45a3.css.map": "/gamm-portfolio/static/css/main.11eb45a3.css.map",
-    "main.f63f9202.js.map": "/gamm-portfolio/static/js/main.f63f9202.js.map"
+    "main.f7a12876.css.map": "/gamm-portfolio/static/css/main.f7a12876.css.map",
+    "main.9bd746de.js.map": "/gamm-portfolio/static/js/main.9bd746de.js.map"
   },
   "entrypoints": [
-    "static/css/main.11eb45a3.css",
-    "static/js/main.f63f9202.js"
+    "static/css/main.f7a12876.css",
+    "static/js/main.9bd746de.js"
   ]
 }
