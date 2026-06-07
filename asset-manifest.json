@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/gamm-portfolio/static/css/main.b9bfd5d6.css",
-    "main.js": "/gamm-portfolio/static/js/main.7c950f61.js",
+    "main.css": "/gamm-portfolio/static/css/main.3c185b5c.css",
+    "main.js": "/gamm-portfolio/static/js/main.e5c7e72c.js",
     "static/media/PrediHipertension.apk": "/gamm-portfolio/static/media/PrediHipertension.43633968bc71c328e34a.apk",
-    "static/media/conversor.zip": "/gamm-portfolio/static/media/conversor.c79772d29c78e818233b.zip",
     "static/media/APIHotel.png": "/gamm-portfolio/static/media/APIHotel.08d7215799178e317f5a.png",
     "static/media/APIWine.png": "/gamm-portfolio/static/media/APIWine.d46857a1667b0497c5e8.png",
     "static/media/viña1.png": "/gamm-portfolio/static/media/viña1.65d8e4e2663378c605af.png",
@@ -14,7 +13,6 @@
     "static/media/perfil.png": "/gamm-portfolio/static/media/perfil.d28646ca02ce26e88dd1.png",
     "static/media/predihipertension.png": "/gamm-portfolio/static/media/predihipertension.7d570d87b89fdac4226b.png",
     "static/media/transportes.png": "/gamm-portfolio/static/media/transportes.d29d2c45a2f30451cb42.png",
-    "static/media/conversor.png": "/gamm-portfolio/static/media/conversor.45e18bf6c169d3bcd234.png",
     "static/media/viña10.png": "/gamm-portfolio/static/media/viña10.8657051e1e59c5f841f0.png",
     "static/media/viña8.png": "/gamm-portfolio/static/media/viña8.4fe1592bef98c794dd64.png",
     "static/media/incidencias7.png": "/gamm-portfolio/static/media/incidencias7.8e51cf8838875d358396.png",
@@ -24,13 +22,11 @@
     "static/media/viña3.png": "/gamm-portfolio/static/media/viña3.a30b46f1fa1e1985662f.png",
     "static/media/viña5.png": "/gamm-portfolio/static/media/viña5.8fbd2662395b6ab63348.png",
     "static/media/viña4.png": "/gamm-portfolio/static/media/viña4.6ad56674d84b2cc1355c.png",
-    "static/media/incidencias.png": "/gamm-portfolio/static/media/incidencias.9272f40792cdfb38d893.png",
     "static/media/incidencias3.png": "/gamm-portfolio/static/media/incidencias3.d256048dfdfa851e9df4.png",
     "static/media/viña9.png": "/gamm-portfolio/static/media/viña9.14149ca5e30efce7930a.png",
     "static/media/viña6.png": "/gamm-portfolio/static/media/viña6.c0b8fd543e0846024bd5.png",
     "static/media/incidencias6.png": "/gamm-portfolio/static/media/incidencias6.8e71b624f84adcb2d279.png",
     "static/media/incidencias2.png": "/gamm-portfolio/static/media/incidencias2.1b98e3f601613760ed25.png",
-    "static/media/challenge-encriptador.png": "/gamm-portfolio/static/media/challenge-encriptador.443ddcbb74815f6bcef5.png",
     "static/media/gamm-logo.ico": "/gamm-portfolio/static/media/gamm-logo.da874e5bc956403cd4e0.ico",
     "static/media/postgresqlIcon.svg": "/gamm-portfolio/static/media/postgresqlIcon.9aed68683d15cfc3c3fd8ddf1d89ff4e.svg",
     "static/media/sqlIcon.svg": "/gamm-portfolio/static/media/sqlIcon.180049ad2b1ce9133dc3a3210c4fe5d6.svg",
@@ -48,11 +44,11 @@
     "static/media/springIcon.svg": "/gamm-portfolio/static/media/springIcon.4075d0e0bcbcb1988713ccf4ab5ceb71.svg",
     "index.html": "/gamm-portfolio/index.html",
     "static/media/tailwindIcon.svg": "/gamm-portfolio/static/media/tailwindIcon.03fdecbfd26561a058e76b84d95184a7.svg",
-    "main.b9bfd5d6.css.map": "/gamm-portfolio/static/css/main.b9bfd5d6.css.map",
-    "main.7c950f61.js.map": "/gamm-portfolio/static/js/main.7c950f61.js.map"
+    "main.3c185b5c.css.map": "/gamm-portfolio/static/css/main.3c185b5c.css.map",
+    "main.e5c7e72c.js.map": "/gamm-portfolio/static/js/main.e5c7e72c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9bfd5d6.css",
-    "static/js/main.7c950f61.js"
+    "static/css/main.3c185b5c.css",
+    "static/js/main.e5c7e72c.js"
   ]
 }
