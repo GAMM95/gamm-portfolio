@@ -1,0 +1,484 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*=============== VARIABLES CSS — LIGHT MODE (default) ===============*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors — Slate + Teal ==========*/
+  --hue: 0;
+  --sat: 0%;
+  --title-color: #1e3a4a;              /* slate oscuro para títulos        */
+  --title-color-dark: #0d2233;         /* hover de botón / énfasis máximo  */
+  --header-footer-color: #FFFFFA;
+  --nav-menu-color: #f5faf9;           /* toque teal muy sutil en nav      */
+  --disabled-color: #888888;
+  --border-input-color: #4a7a8a;       /* borde inputs alineado a la paleta*/
+  --button-color: #1e4d6b;             /* slate primario                   */
+  --button-color-hover: #0d2e42;       /* slate profundo al hacer hover    */
+  --button-text-color: #ffffff;
+  --text-color: #2d3f4a;               /* slate medio — cuerpo de texto    */
+  --card-color: #ffffff;
+  --body-color: #F4F8F7;               /* blanco con toque teal muy suave  */
+  --container-color: #ffffff;
+  --hover-color: rgba(13, 138, 110, 0.08);
+  --hover-text-color: #0d8a6e;         /* teal — acento en hover/activo    */
+  --hover-card-color: #E1F5EE;         /* teal claro para hover de cards   */
+  --icon-color: #1e4d6b;               /* íconos sociales en reposo        */
+  --accent-bg: #E1F5EE;                /* fondo de badges y chips          */
+  --accent-border: #9FE1CB;            /* borde de elementos acento        */
+  --fab-color: #1e4d6b;                /* botones flotantes (Scroll/Toggle)*/
+  --fab-text-color: #ffffff;
+  --fab-hover: #0d2e42;
+  /* Alias usado por Modal y Work — apunta al acento teal */
+  --first-color: #0d8a6e;
+  --btn-outline-text: #0d8a6e;         /* texto + borde en botones outline */
+  --btn-outline-hover-bg: #0d8a6e;     /* fondo al hacer hover             */
+  --btn-outline-hover-text: #ffffff;   /* texto sobre fondo teal           */
+
+  /* Grid noise — light: tono teal muy sutil */
+  --grid-line-color: rgba(13, 110, 86, 0.08);
+  --grid-color:      rgba(13, 110, 86, 0.08);   /* para body::before        */
+  --radial-color:    rgba(244, 248, 247, 0.95);  /* desvanece el grid al centro */
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /*========== Font weight ==========*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  --mb-0-15: 0.15rem;
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --radius: 1rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/*=============== DARK MODE VARIABLES — Slate + Teal ===============*/
+.dark {
+  --title-color: #c8dde8;              /* slate claro — títulos legibles   */
+  --title-color-dark: #e8f4fb;         /* énfasis máximo / hover           */
+  --header-footer-color: #0a1118;      /* slate muy oscuro                 */
+  --nav-menu-color: #0d1a22;           /* nav mobile                       */
+  --disabled-color: #4a6070;
+  --border-input-color: #2a6a8f;       /* borde inputs teal                */
+  --button-color: #0d3d52;             /* slate-teal oscuro                */
+  --button-color-hover: #0d5c4a;       /* teal oscuro al hacer hover       */
+  --button-text-color: #9ecae8;        /* texto botón — azul claro         */
+  --button-border: #1e6a8a;            /* borde visible sobre fondo oscuro */
+  --text-color: #a8c4d0;               /* cuerpo — slate claro medio       */
+  --card-color: #0f1e28;
+  --body-color: #080f14;               /* fondo principal oscuro           */
+  --container-color: #0d1a22;
+  --hover-color: rgba(13, 138, 110, 0.12);
+  --hover-text-color: #5DCAA5;         /* teal brillante en hover/activo   */
+  --hover-card-color: #04342C;
+  --icon-color: #5DCAA5;               /* íconos sociales — teal visible   */
+  --accent-bg: #04342C;                /* fondo de badges                  */
+  --accent-border: #0d8a6e;            /* borde de elementos acento        */
+  --fab-color: #0d8a6e;                /* botones flotantes — teal sólido  */
+  --fab-text-color: #e1f5ee;           /* texto/icono sobre teal           */
+  --fab-hover: #0B6B55;                /* teal más oscuro al hacer hover   */
+  /* Alias teal para dark — más brillante para que se vea */
+  --first-color: #5DCAA5;
+  --btn-outline-text: #5DCAA5;
+  --btn-outline-hover-bg: #5DCAA5;
+  --btn-outline-hover-text: #04342C;   /* texto oscuro sobre teal claro    */
+
+  /* Grid noise — dark: teal muy sutil */
+  --grid-line-color: rgba(13, 138, 110, 0.07);
+  --grid-color:      rgba(13, 138, 110, 0.07);   /* para body::before        */
+  --radial-color:    rgba(8, 15, 20, 0.92);       /* desvanece el grid al centro */
+}
+
+/* Responsive typography */
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+/*=============== GRID BACKGROUND ===============*/
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  background:
+    radial-gradient(ellipse 80% 70% at center,
+      var(--radial-color),
+      transparent 85%),
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+
+  background-size:
+    auto,
+    30px 30px,
+    30px 30px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+.fixed.box-border {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== GRID NOISE BACKGROUND ===============*/
+/*
+  Applies a subtle crosshatch grid to any element with this class.
+  The color adapts automatically via --grid-line-color (light/dark).
+*/
+.grid-noise {
+  background-image:
+    linear-gradient(var(--grid-line-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line-color) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 5rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/*=============== LAYOUT ===============*/
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--button-color);
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  border: 1.5px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--button-color-hover);
+}
+
+/* Dark mode — botones .button con borde y texto legible */
+.dark .button {
+  color: var(--button-text-color);
+  border-color: var(--button-border, transparent);
+}
+
+.dark .button:hover {
+  background-color: var(--button-color-hover);
+  border-color: #5DCAA5;
+  color: #e1f5ee;
+}
+
+/*=============== SOCIAL ICONS (Social.jsx) ===============*/
+/*
+  Social.jsx usa text-[var(--button-color)] en el wrapper.
+  En dark --button-color es slate oscuro (#0d3d52) e invisible.
+  Sobreescribimos el color de texto en dark directamente.
+*/
+.dark .social-icons,
+.dark [class*="text-[var(--button-color)]"] {
+  color: var(--icon-color) !important;
+}
+
+/* Hover de íconos: en dark debe ser teal brillante, no el rgba casi invisible */
+.dark .social-icons a:hover,
+.dark [class*="text-[var(--button-color)]"] a:hover {
+  color: var(--hover-text-color) !important;
+}
+
+/*=============== FAB BUTTONS (Scroll.jsx + ThemeToggle.jsx) ===============*/
+/*
+  Estos componentes usan bg-[var(--button-color)] directamente.
+  En dark sobreescribimos con --fab-color (teal sólido y visible).
+*/
+.dark [class*="bg-[var(--button-color)]"] {
+  background-color: var(--fab-color) !important;
+  color: var(--fab-text-color) !important;
+}
+
+.dark [class*="bg-[var(--button-color)]"]:hover {
+  background-color: var(--fab-hover) !important;
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*=============== BTN-OUTLINE (Modal, Work — border pill) ===============*/
+/* Botón borde pill: "Mostrar más", "Código", "Demo", "Instalador"      */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .4rem 1.1rem;
+  border-radius: 9999px;
+  border: 2px solid var(--btn-outline-text);
+  color: var(--btn-outline-text);
+  background: transparent;
+  font-size: .875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease,
+              transform .2s ease, box-shadow .2s ease;
+}
+.btn-outline:hover {
+  background-color: var(--btn-outline-hover-bg);
+  color: var(--btn-outline-hover-text);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(13,138,110,.25);
+}
+
+/*=============== BTN-SOLID (Modal — Demo/Instalador, Contact — Enviar) ===============*/
+/* Botón sólido pill / redondeado — acento teal                         */
+.btn-solid {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .4rem 1.1rem;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-color: var(--btn-outline-hover-bg);
+  color: var(--btn-outline-hover-text);
+  font-size: .875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.btn-solid:hover {
+  background-color: var(--button-color-hover);
+  color: #e1f5ee;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(13,138,110,.3);
+}
+.dark .btn-solid:hover {
+  background-color: #0B6B55;
+}
+
+/*=============== BTN-TAB (QualificationTabs) ===============*/
+/* Estado inactivo */
+.btn-tab {
+  padding: .4rem 1.4rem;
+  border-radius: 9999px;
+  font-size: .875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1.5px solid var(--accent-border);
+  background: transparent;
+  color: var(--text-color);
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.btn-tab:hover {
+  border-color: var(--btn-outline-text);
+  color: var(--btn-outline-text);
+}
+/* Estado activo */
+.btn-tab.active {
+  background-color: var(--button-color);
+  color: #ffffff;
+  border-color: var(--button-color);
+}
+.dark .btn-tab.active {
+  background-color: var(--fab-color);
+  color: var(--fab-text-color);
+  border-color: var(--fab-color);
+}
+
+/*=============== DARK MODE TOGGLE BUTTON ===============*/
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 1.5px solid var(--accent-border);
+  color: var(--title-color);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  font-size: 1.1rem;
+}
+
+.theme-toggle:hover {
+  background: var(--hover-color);
+  color: var(--hover-text-color);
+  border-color: var(--hover-text-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
+
+  .button__container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
+
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
