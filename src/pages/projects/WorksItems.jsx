@@ -5,7 +5,6 @@ const WorksItems = ({ item }) => {
   const [modal, setModal] = useState(false);
   const [index, setIndex] = useState(0);
 
-  // Normalizar media (memorizado)
   const media = useMemo(() => {
     return item.media && item.media.length
       ? item.media.filter((m) => m.type === "image")
@@ -14,63 +13,41 @@ const WorksItems = ({ item }) => {
         : [];
   }, [item]);
 
-  // 🔹 Reset cuando cambia proyecto
-  useEffect(() => {
-    setIndex(0);
-  }, [media]);
+  useEffect(() => { setIndex(0); }, [media]);
 
-  // 🔹 Auto cambio de imágenes
   useEffect(() => {
     if (media.length <= 1) return;
-
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % media.length);
     }, 2500);
-
     return () => clearInterval(interval);
   }, [media]);
 
   return (
     <>
-      {/* CARD */}
       <div
         onClick={() => setModal(true)}
         data-aos="zoom-in"
         data-aos-duration="1000"
-        className="
-          relative cursor-pointer
-          bg-[var(--card-color)]
-          border border-black/10
-          rounded-xl p-4
-          mx-4 sm:mx-0
-          flex items-center justify-center
-          transition-all duration-300
-          hover:-translate-y-1.5 hover:shadow-xl
-        "
+        className="project-card"
       >
-        {/* Contenedor imagen */}
-        <div
-          className="relative w-full max-w-[320px] h-[200px] overflow-hidden rounded-lg"
-          style={{
-            backgroundColor: "var(--card-color)",
-          }}
-        >
+        {/* Imagen con slider automático */}
+        <div className="project-card__img">
 
-          {/* 🔥 BADGE */}
+          {/* Badge en desarrollo */}
           {item.status === "en_progreso" && (
-            <span
-              className="
-                absolute top-2 left-2 z-20
-                bg-yellow-400/90 backdrop-blur-sm
-                text-black text-xs font-semibold
-                px-3 py-1 rounded-full shadow-md
-              "
-            >
+            <span className="
+              absolute top-2 left-2 z-20
+              bg-yellow-400/90 backdrop-blur-sm
+              text-black text-xs font-semibold
+              px-3 py-1 rounded-full shadow-md
+              dark:bg-yellow-400/15 dark:text-yellow-300 dark:border dark:border-yellow-400/30
+            ">
               🚧 En desarrollo
             </span>
           )}
 
-          {/* 🔥 SLIDER */}
+          {/* Slides */}
           {media.map((img, i) => (
             <img
               key={i}
@@ -83,77 +60,46 @@ const WorksItems = ({ item }) => {
               `}
             />
           ))}
-        </div>
 
-        {/* Overlay desktop */}
-        <div
-          className="
-            absolute inset-0 z-10
-            flex flex-col items-center justify-center
-            bg-black/80 rounded-xl
-            opacity-0 hover:opacity-100
-            transition-opacity duration-300
-            hidden sm:flex
-          "
-        >
-          {/* <h3 className="text-white font-bold text-lg text-center px-2">
-            {item.title}
-          </h3>
-          <p className="text-[15px] text-white/70 mt-1">
-            {item.technologies.split('-')[0]}
-          </p> */}
-          <div className="text-center px-3">
-            <h3 className="text-white font-semibold text-lg leading-tight">
-              {item.title}
-            </h3>
-
-            <div className="mt-2 flex gap-2 justify-center flex-wrap">
-              {item.technologies.split('-').slice(0, 4).map((tech, i) => (
+          {/* Dots indicadores si hay más de 1 imagen */}
+          {media.length > 1 && (
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+              {media.map((_, i) => (
                 <span
                   key={i}
-                  className="text-[10px] bg-white/10 text-white px-2 py-[2px] rounded"
-                >
-                  {tech.trim()}
-                </span>
+                  className={`
+                    block h-1.5 rounded-full transition-all duration-300 bg-white/70
+                    ${i === index ? "w-4 opacity-100" : "w-1.5 opacity-40"}
+                  `}
+                />
               ))}
             </div>
+          )}
+
+          {/* Línea acento teal */}
+          <div className="project-card__accent" />
+        </div>
+
+        {/* Body */}
+        <div className="project-card__body">
+          <p className="project-card__title">{item.title}</p>
+          <div className="project-card__techs">
+            {item.technologies.split("-").slice(0, 4).map((tech, i) => (
+              <span key={i} className="project-card__tech">
+                {tech.trim()}
+              </span>
+            ))}
           </div>
         </div>
 
-        {/* Overlay mobile */}
-        <div
-          className="
-            absolute inset-0 z-10
-            flex items-center justify-center
-            bg-black/70 rounded-xl sm:hidden
-          "
-        >
-          <div className="text-center px-3">
-            <h3 className="text-white font-semibold text-lg leading-tight">
-              {item.title}
-            </h3>
-
-            <div className="mt-2 flex gap-2 justify-center flex-wrap">
-              {item.technologies.split('-').slice(0, 2).map((tech, i) => (
-                <span
-                  key={i}
-                  className="text-[12px] bg-white/10 text-white px-2 py-[2px] rounded"
-                >
-                  {tech.trim()}
-                </span>
-              ))}
-            </div>
-          </div>
+        {/* Footer */}
+        <div className="project-card__footer">
+          <span className="project-card__cat">{item.category}</span>
+          <span className="project-card__arrow">↗</span>
         </div>
       </div>
 
-      {/* MODAL */}
-      {modal && (
-        <Modal
-          item={item}
-          onClose={() => setModal(false)}
-        />
-      )}
+      {modal && <Modal item={item} onClose={() => setModal(false)} />}
     </>
   );
 };

@@ -16,10 +16,11 @@ const Work = () => {
     if (item.name === "todos") {
       setProjects(sorted(projectsData));
     } else {
-      const newProjects = projectsData.filter(
-        (project) => project.category.toLowerCase() === item.name
+      setProjects(
+        sorted(projectsData.filter(
+          (p) => p.category.toLowerCase() === item.name
+        ))
       );
-      setProjects(sorted(newProjects));
     }
     setVisibleCount(ITEMS_INICIAL);
   }, [item]);
@@ -48,20 +49,20 @@ const Work = () => {
         ))}
       </div>
 
-      {/* Grid de proyectos */}
-      <div className="grid gap-8 grid-cols-[repeat(auto-fit,minmax(280px,1fr))] max-w-[1200px] mx-auto">
+      {/* Grid */}
+      <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(260px,1fr))] max-w-[1200px] mx-auto px-4 sm:px-6">
         {projects.slice(0, visibleCount).map((item) => (
           <WorksItems item={item} key={item.id} />
         ))}
       </div>
 
-      {/* Botón mostrar más / menos */}
+      {/* Mostrar más / menos */}
       {projects.length > ITEMS_INICIAL && (
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-10">
           {visibleCount < projects.length ? (
             <button
               onClick={() => setVisibleCount((prev) => prev + 4)}
-              className="btn-outline"
+              className="btn-ghost"
             >
               Mostrar más
             </button>
@@ -69,10 +70,9 @@ const Work = () => {
             <button
               onClick={() => {
                 setVisibleCount(ITEMS_INICIAL);
-                const section = document.getElementById("proyectos");
-                if (section) section.scrollIntoView({ behavior: "smooth" });
+                document.getElementById("proyectos")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="btn-outline"
+              className="btn-ghost"
             >
               Mostrar menos
             </button>

@@ -1,10 +1,8 @@
-
 import { useState, useEffect } from 'react'
 import './index.css'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Scroll from './components/scroll/Scroll'
-import ThemeToggle from './components/themeToggle/ThemeToggle'
 
 import Home from './pages/home/Home'
 import Skills from './pages/skills/Skills'
@@ -43,11 +41,10 @@ const App = () => {
   // ──────────────────────────────────────────────────────────────────────────
 
   return (
-    // grid-noise applies the CSS crosshatch; background-color comes from --body-color via CSS
-    <div className="min-h-screen">
+    <div className="flex flex-col min-h-screen">
       <Header isDark={isDark} toggleTheme={toggleTheme} />
 
-      <main className="pt-16 md:pt-20">
+      <main className="flex-1 pt-16 md:pt-20">
         <Home />
         <Skills />
         <Projects />
@@ -56,7 +53,6 @@ const App = () => {
       </main>
 
       <Footer />
-       <ThemeToggle />
       <Scroll />
     </div>
   )

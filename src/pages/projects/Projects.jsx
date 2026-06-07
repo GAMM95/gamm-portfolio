@@ -2,21 +2,29 @@ import Work from "./Work";
 
 const Projects = () => {
   return (
-    <section id="proyectos" className="py-20" >
+    <section id="proyectos" className="section">
       <div className="sm:pt-10">
-        {/* Título */}
-        <h2 className="text-[var(--h1-font-size)] text-center font-semibold">
+
+        <h2
+          className="section__title"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           Proyectos
         </h2>
 
-        {/* Subtítulo */}
-        <span className="block text-center text-sm text-gray-500 mb-12">
+        <span
+          className="section__subtitle"
+          style={{ color: "var(--text-color)" }}
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="100"
+        >
           Mi portafolio de proyectos realizados
         </span>
 
         <Work />
       </div>
-
     </section>
   );
 };

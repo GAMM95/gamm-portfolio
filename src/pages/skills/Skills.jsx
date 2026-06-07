@@ -1,66 +1,105 @@
+import { useState, useEffect } from "react";
+import AOS from "aos";
 import { skillsTabs, skillsContent } from "./skillsData";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
 
 const Skills = () => {
+  const [activeTab, setActiveTab] = useState(skillsTabs[0].id);
+
+  const currentTab    = skillsTabs.find((t) => t.id === activeTab);
+  const currentSkills = skillsContent[activeTab] ?? [];
+
+  // Re-trigger AOS cada vez que cambia el tab
+  useEffect(() => {
+    AOS.refresh();
+  }, [activeTab]);
+
+  const handleTab = (id) => {
+    setActiveTab(id);
+  };
+
   return (
-    <section id="habilidades" className="py-20 ">
-      <div className="sm:pt-10">
+    <section id="habilidades" className="section">
+      <h2
+        className="section__title"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        Habilidades
+      </h2>
+      <span
+        className="section__subtitle"
+        style={{ color: "var(--text-color)" }}
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="100"
+      >
+        Tecnologías que manejo
+      </span>
 
-        <h2 className="text-[var(--h1-font-size)] text-center font-semibold">
-          Habilidades
-        </h2>
-
-        <span className="block text-center text-sm text-gray-500 mb-12">
-          Tecnologías que manejo
-        </span>
-
-        <div className="max-w-[968px] mx-auto px-4">
-          <Swiper
-            modules={[Pagination]}
-            spaceBetween={40}
-            slidesPerView={1}
-            pagination={{ clickable: true }}
-            breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-          >
-            {skillsTabs.map((tab) => (
-              <SwiperSlide key={tab.id}>
-                <div
-                  className="rounded-xl p-4 sm:p-6 flex flex-col items-center justify-center text-center min-h-[350px]"
-                  style={{ backgroundColor: "var(--card-color)" }}
-                >
-                  {/* Titulo */}
-                  <h3 className="text-xl font-semibold mb-1">  {tab.title} </h3>
-
-                  {/* Subtitulo */}
-                  <span className="text-sm text-gray-500 mb-8"> {tab.subtitle} </span>
-
-                  {/* Lista de skills */}
-                  <div className="flex flex-wrap justify-center gap-8">
-                    {skillsContent[tab.id].map(({ name, icon: Icon }) => (
-                      <div
-                        key={name}
-                        className="flex flex-col items-center text-sm"
-                      >
-                        <Icon className=" text-blue-800 w-10 h-10 transition-transform duration-300 hover:scale-125 hover:text-blue-600" />
-                        <span className="mt-2">{name}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-
+      {/* Tabs */}
+      <div
+        className="flex flex-wrap justify-center gap-3 mb-10"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="150"
+      >
+        {skillsTabs.map((tab) => {
+          const Icon = tab.icon;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => handleTab(tab.id)}
+              className={`btn-tab inline-flex items-center gap-2 ${
+                activeTab === tab.id ? "active" : ""
+              }`}
+            >
+              <Icon size={14} aria-hidden="true" />
+              {tab.title}
+            </button>
+          );
+        })}
       </div>
 
+      {/* Category header */}
+      <div className="text-center mb-8">
+        <p
+          className="text-base font-semibold mb-0.5"
+          style={{ color: "var(--title-color)" }}
+          data-aos="fade-down"
+          data-aos-duration="400"
+          data-aos-id={`header-${activeTab}`}
+        >
+          {currentTab?.title}
+        </p>
+        <p
+          className="text-sm"
+          style={{ color: "var(--disabled-color)" }}
+        >
+          {currentTab?.subtitle}
+        </p>
+      </div>
+
+      {/* Skills grid */}
+      <div
+        className="grid gap-5 max-w-[720px] mx-auto px-4"
+        style={{ gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))" }}
+      >
+        {currentSkills.map(({ name, icon: Icon }, i) => (
+          <div
+            key={`${activeTab}-${name}`}
+            className="skill-card"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-delay={i * 60}
+          >
+            <div className="skill-card__icon-wrap">
+              <Icon aria-hidden="true" />
+            </div>
+            <span className="skill-card__name">{name}</span>
+            <div className="skill-card__dot" />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

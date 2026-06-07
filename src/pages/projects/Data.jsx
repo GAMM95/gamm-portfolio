@@ -1,11 +1,9 @@
-import conversor  "../../assets/screenshots/conversor.png"
 import transportes from "../../assets/screenshots/transportes.png"
 import analytics_hta from "../../assets/screenshots/analytics_hta.png"
 import apk1 from "../../assets/installers/PrediHipertension.apk"
 import apiwine from "../../assets/thumbnails/APIWine.png"
 import apivet from "../../assets/thumbnails/Apivet1.png"
 import apihotel from "../../assets/thumbnails/APIHotel.png"
-// import apifuel from "../../assets/thumbnails/APIFuel.png"
 import apirentas from "../../assets/thumbnails/APIRentas.png"
 
 import inc1 from "../../assets/screenshots/incidencias/incidencias1.png"
@@ -79,7 +77,7 @@ export const projectsData = [
     date: "2024-06-22",
     title: 'Entrenamiento de datos para predecir el riesgo de desarrollar HTA',
     technologies: 'Python - Pandas - Scikit learn - Matplotlib - Seaborn - Numpy - SMOTE - ML Algorithms',
-    category: 'Data Analysis',
+    category: 'Otros',
     github: 'https://github.com/GAMM95/PrediHipertension_training_data.git',
     description: 'Proyecto de predicción del riesgo de desarrollar Hipertensión Arterial en adultos mayores de 18 años usando aprendizaje supervisado. El modelo se entrenó con un dataset de la BRFSS 2015 de 441,455 registros, seleccionando una muestra de 29,729 registros basada en factores de riesgo validados por médicos internistas de Trujillo, ajustados a la realidad de la HTA en Perú. Se evaluó su rendimiento con métricas como Exactitud, Precisión, Recall y F1-score utilizando algoritmos como Random Forest, KNN, Decision Tree, Logistic Regression y XGBoost.'
   },
@@ -183,9 +181,6 @@ export const projectsNav = [
   },
   {
     name: 'APIs',
-  },
-  {
-    name: 'Data Analysis',
   },
   {
     name: 'Otros',

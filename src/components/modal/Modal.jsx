@@ -4,116 +4,132 @@ import { FaDownload, FaPlay } from "react-icons/fa";
 import ImageCarousel from "../carousel/ImageCarousel";
 
 const getYoutubeId = (url) => {
-  const match = url.match(
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/i
-  );
-
+  const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/i);
   return match ? match[1] : null;
 };
 
 const Modal = ({ item, onClose }) => {
   if (!item) return null;
 
-  const youtubeId = item.demo
-    ? getYoutubeId(item.demo)
-    : null;
+  const youtubeId = item.demo ? getYoutubeId(item.demo) : null;
+
+  const media = item.media
+    ? item.media
+    : item.image
+      ? [{ type: "image", src: item.image }]
+      : [];
+
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center">
-      {/* Fondo */}
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4">
+      {/* Backdrop */}
       <div
         onClick={onClose}
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm"
+        className="fixed inset-0 bg-black/65 backdrop-blur-sm"
       />
 
-      {/* Wrapper */}
+      {/* Modal */}
       <div className="
-        relative z-50
-        w-[92%] max-w-[900px]
-        rounded-2xl
-        bg-[var(--card-color)]
-        shadow-[0_20px_60px_rgba(0,0,0,0.5)]
-        overflow-hidden
-        animate-[fadeIn_.3s_ease]
-      ">
-        {/* Contenido con scroll */}
-        <div className="flex flex-col gap-6 max-h-[90vh] overflow-y-auto no-scrollbar p-5 lg:p-8">
+        relative z-50 w-full max-w-[860px]
+        rounded-2xl overflow-hidden
+        shadow-[0_24px_64px_rgba(0,0,0,0.55)]
+        animate-[fadeIn_.25s_ease]
+        max-h-[92vh] flex flex-col
+        "
+        style={{
+          backgroundColor: "var(--card-color)",
+          borderWidth: "0.5px",
+          borderStyle: "solid",
+          borderColor: "var(--accent-border)",
+        }}
+      >
 
-          {/* Imagen / Video */}
-          <div
-            className="w-full overflow-hidden rounded-xl"
-            style={{
-              backgroundColor: "var(--card-color)",
-            }}
-          >
-            {youtubeId ? (
-              <div className="relative w-full aspect-video">
-                <iframe
-                  className="absolute inset-0 w-full h-full"
-                  src={`https://www.youtube.com/embed/${youtubeId}`}
-                  title={item.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            ) : (
-              <ImageCarousel
-                media={
-                  item.media
-                    ? item.media
-                    : item.image
-                      ? [{ type: "image", src: item.image }]
-                      : []
-                }
-              />
-            )}
-          </div>
-
-          {/* Texto */}
-          <div className="flex flex-col">
-            <h3 className="text-2xl font-bold text-[var(--title-color)] mb-2 text-center">
+        {/* HEADER: título + chips + cerrar */}
+        <div className="
+          flex items-start justify-between gap-4 px-5 py-4 shrink-0"
+         style={{ borderBottom: "0.5px solid var(--accent-border)" }}
+         >
+          <div className="flex-1 min-w-0">
+            <h3 className="text-base font-semibold leading-snug mb-2 text-[var(--title-color)]">
               {item.title}
             </h3>
-
-            <p className="text-xs font-medium mb-4 text-center" style={{ color: "var(--first-color)" }}>
-              {item.technologies}
-            </p>
-
-            <p className="text-sm leading-relaxed text-[var(--text-color)] mb-6 text-justify">
-              {item.description}
-            </p>
-
-            {/* Botones */}
-            <div className="flex flex-wrap justify-center gap-4">
-
-              {item.github && (
-                <a href={item.github} target="_blank" rel="noopener noreferrer" className="btn-outline">
-                  <BsGithub /> Código
-                </a>
-              )}
-
-              {item.demo && (
-                <a href={item.demo} target="_blank" rel="noopener noreferrer" className="btn-solid">
-                  <FaPlay /> Demo
-                </a>
-              )}
-
-              {item.installer && (
-                <a href={item.installer} target="_blank" rel="noopener noreferrer" className="btn-solid">
-                  <FaDownload /> Instalador
-                </a>
-              )}
-
+            <div className="flex flex-wrap gap-1.5">
+              {item.technologies.split("-").map((tech, i) => (
+                <span key={i} className="project-card__tech text-[11px]">
+                  {tech.trim()}
+                </span>
+              ))}
             </div>
           </div>
+
+          <button
+            onClick={onClose}
+            aria-label="Cerrar"
+            className="
+              shrink-0 w-8 h-8 rounded-full flex items-center justify-center
+              bg-[var(--body-color)] dark:bg-[rgba(255,255,255,0.05)]
+              border border-[var(--accent-border)] dark:border-[rgba(255,255,255,0.08)]
+              text-[var(--text-color)] dark:text-[#4a6070]
+              hover:text-[var(--hover-text-color)] hover:border-[var(--hover-text-color)]
+              transition-all duration-150 text-sm
+            "
+          >
+            <TfiClose />
+          </button>
         </div>
 
-        {/* Botón cerrar */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 bg-black/40 p-2 rounded-full text-white hover:scale-110 transition"
-        >
-          <TfiClose />
-        </button>
+        {/* IMAGEN / VIDEO */}
+        <div className="w-full shrink-0 relative"
+          style={{
+            backgroundColor: "var(--body-color)",
+            borderBottom: "0.5px solid var(--accent-border)",
+          }}
+          >
+          {youtubeId ? (
+            <div className="relative w-full aspect-video">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src={`https://www.youtube.com/embed/${youtubeId}`}
+                title={item.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          ) : (
+            <ImageCarousel media={media} />
+          )}
+          <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-[var(--hover-text-color)]" />
+        </div>
+
+        {/* DESCRIPCIÓN */}
+        <div className="flex-1 overflow-y-auto px-5 py-5 no-scrollbar">
+          <p className="text-sm leading-relaxed text-justify text-[var(--text-color)]">
+            {item.description}
+          </p>
+        </div>
+
+        {/* FOOTER: botones */}
+        {(item.github || item.demo || item.installer) && (
+          <div className="
+            shrink-0 flex flex-wrap gap-3 px-5 py-4
+            border-t border-[var(--accent-border)] dark:border-[rgba(13,138,110,0.15)]
+          ">
+            {item.github && (
+              <a href={item.github} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+                <BsGithub /> Código
+              </a>
+            )}
+            {item.demo && (
+              <a href={item.demo} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                <FaPlay style={{ fontSize: "11px" }} /> Demo
+              </a>
+            )}
+            {item.installer && (
+              <a href={item.installer} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                <FaDownload style={{ fontSize: "11px" }} /> Instalador
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
