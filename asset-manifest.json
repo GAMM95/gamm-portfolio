@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gamm-portfolio/static/css/main.3c185b5c.css",
-    "main.js": "/gamm-portfolio/static/js/main.e5c7e72c.js",
+    "main.css": "/gamm-portfolio/static/css/main.11eb45a3.css",
+    "main.js": "/gamm-portfolio/static/js/main.f63f9202.js",
     "static/media/PrediHipertension.apk": "/gamm-portfolio/static/media/PrediHipertension.43633968bc71c328e34a.apk",
     "static/media/APIHotel.png": "/gamm-portfolio/static/media/APIHotel.08d7215799178e317f5a.png",
     "static/media/APIWine.png": "/gamm-portfolio/static/media/APIWine.d46857a1667b0497c5e8.png",
@@ -10,7 +10,7 @@
     "static/media/incidencias1.png": "/gamm-portfolio/static/media/incidencias1.413651d24b45afdf0596.png",
     "static/media/analytics_hta.png": "/gamm-portfolio/static/media/analytics_hta.24f116ccf40e363f6c31.png",
     "static/media/APIRentas.png": "/gamm-portfolio/static/media/APIRentas.72fe2aef002c3228ee9b.png",
-    "static/media/perfil.png": "/gamm-portfolio/static/media/perfil.d28646ca02ce26e88dd1.png",
+    "static/media/perfil.png": "/gamm-portfolio/static/media/perfil.d0a1e6c4410d7981695c.png",
     "static/media/predihipertension.png": "/gamm-portfolio/static/media/predihipertension.7d570d87b89fdac4226b.png",
     "static/media/transportes.png": "/gamm-portfolio/static/media/transportes.d29d2c45a2f30451cb42.png",
     "static/media/viña10.png": "/gamm-portfolio/static/media/viña10.8657051e1e59c5f841f0.png",
@@ -27,6 +27,7 @@
     "static/media/viña6.png": "/gamm-portfolio/static/media/viña6.c0b8fd543e0846024bd5.png",
     "static/media/incidencias6.png": "/gamm-portfolio/static/media/incidencias6.8e71b624f84adcb2d279.png",
     "static/media/incidencias2.png": "/gamm-portfolio/static/media/incidencias2.1b98e3f601613760ed25.png",
+    "static/media/gamm-logo2.ico": "/gamm-portfolio/static/media/gamm-logo2.fe7f58df4e3f531e4127.ico",
     "static/media/gamm-logo.ico": "/gamm-portfolio/static/media/gamm-logo.da874e5bc956403cd4e0.ico",
     "static/media/postgresqlIcon.svg": "/gamm-portfolio/static/media/postgresqlIcon.9aed68683d15cfc3c3fd8ddf1d89ff4e.svg",
     "static/media/sqlIcon.svg": "/gamm-portfolio/static/media/sqlIcon.180049ad2b1ce9133dc3a3210c4fe5d6.svg",
@@ -44,11 +45,11 @@
     "static/media/springIcon.svg": "/gamm-portfolio/static/media/springIcon.4075d0e0bcbcb1988713ccf4ab5ceb71.svg",
     "index.html": "/gamm-portfolio/index.html",
     "static/media/tailwindIcon.svg": "/gamm-portfolio/static/media/tailwindIcon.03fdecbfd26561a058e76b84d95184a7.svg",
-    "main.3c185b5c.css.map": "/gamm-portfolio/static/css/main.3c185b5c.css.map",
-    "main.e5c7e72c.js.map": "/gamm-portfolio/static/js/main.e5c7e72c.js.map"
+    "main.11eb45a3.css.map": "/gamm-portfolio/static/css/main.11eb45a3.css.map",
+    "main.f63f9202.js.map": "/gamm-portfolio/static/js/main.f63f9202.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c185b5c.css",
-    "static/js/main.e5c7e72c.js"
+    "static/css/main.11eb45a3.css",
+    "static/js/main.f63f9202.js"
   ]
 }
