@@ -1,4 +1,5 @@
 import React from "react";
+import { IoCalendarOutline } from "react-icons/io5";
 
 const TimelineItem = ({ item, isLeft }) => {
   const CardContent = (
@@ -37,10 +38,11 @@ const TimelineItem = ({ item, isLeft }) => {
       </span>
 
       <span
-        className="block text-xs mt-1"
+        className="mt-1 text-xs inline-flex items-center gap-1"
         style={{ color: "var(--disabled-color)" }}
       >
-        📅 {item.date}
+        <IoCalendarOutline size={14} />
+        {item.date}
       </span>
     </div>
   );

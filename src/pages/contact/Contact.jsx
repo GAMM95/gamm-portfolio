@@ -17,15 +17,14 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const name    = form.current.name.value.trim();
-    const email   = form.current.email.value.trim();
+    const name = form.current.name.value.trim();
+    const email = form.current.email.value.trim();
     const mensaje = form.current.mensaje.value.trim();
 
     if (!name || !email || !mensaje) {
       mostrarToastrError("Por favor, complete todos los campos.");
       return;
     }
-
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       mostrarToastrError("Por favor, ingresa un correo electrónico válido.");
@@ -46,24 +45,45 @@ const Contact = () => {
   };
 
   return (
-    <section id="contacto" className="py-12">
-      <h2 className="text-3xl font-medium text-center mb-2" style={{ color: "var(--title-color)" }}>
+    <section id="contacto" className="section">
+
+      <h2
+        className="section__title"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
         Contáctame
       </h2>
-      <span className="block text-center mb-8" style={{ color: "var(--text-color)" }}>
+
+      <span
+        className="section__subtitle"
+        style={{ color: "var(--text-color)" }}
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="100"
+      >
         Ponte en contacto
       </span>
 
       <div className="flex flex-col items-center px-4 sm:px-6 gap-6">
+
         {/* Card formulario */}
         <div
           className="w-full max-w-3xl rounded-2xl shadow-lg p-6 sm:p-8 md:p-10"
           style={{ backgroundColor: "var(--card-color)" }}
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="150"
         >
           <form ref={form} onSubmit={sendEmail} className="w-full" id="contact-form">
 
             {/* Nombre */}
-            <div className="relative mb-5 h-16">
+            <div
+              className="relative mb-5 h-16"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-delay="200"
+            >
               <label
                 className="absolute -top-3 left-5 text-sm px-2 z-10"
                 style={{ backgroundColor: "var(--card-color)", color: "var(--text-color)" }}
@@ -80,7 +100,12 @@ const Contact = () => {
             </div>
 
             {/* Email */}
-            <div className="relative mb-5 h-16">
+            <div
+              className="relative mb-5 h-16"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-delay="280"
+            >
               <label
                 className="absolute -top-3 left-5 text-sm px-2 z-10"
                 style={{ backgroundColor: "var(--card-color)", color: "var(--text-color)" }}
@@ -97,7 +122,12 @@ const Contact = () => {
             </div>
 
             {/* Mensaje */}
-            <div className="relative mb-5 h-32">
+            <div
+              className="relative mb-5 h-32"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-delay="360"
+            >
               <label
                 className="absolute -top-3 left-5 text-sm px-2 z-10"
                 style={{ backgroundColor: "var(--card-color)", color: "var(--text-color)" }}
@@ -115,15 +145,23 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Botón enviar — mismo estilo que "Vista previa CV" */}
-        <button
-          type="submit"
-          form="contact-form"
-          className="btn-primary px-6 py-3 w-full sm:w-auto"
+        {/* Botón enviar */}
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="420"
+          className="w-full sm:w-auto"
         >
-          Enviar mensaje
-          <img src={ContactSVG} alt="send" className="w-5 h-5" />
-        </button>
+          <button
+            type="submit"
+            form="contact-form"
+            className="btn-primary px-6 py-3 w-full sm:w-auto flex items-center justify-center gap-2"
+          >
+            Enviar mensaje
+            <img src={ContactSVG} alt="send" className="w-5 h-5" />
+          </button>
+        </div>
+
       </div>
 
       <ToastContainer />
