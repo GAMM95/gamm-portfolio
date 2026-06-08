@@ -35,7 +35,7 @@ export const projectsData = [
     technologies: 'Java 17 - Spring Boot - Spring Data JPA - PostgreSQL',
     category: 'APIs',
     github: 'https://github.com/GAMM95/hotel_api',
-    description: 'Backend en Spring Boot para gestionar reservas, habitaciones, servicios y pagos de una cadena de hoteles. Utiliza DTOs para manejar la transferencia de datos entre la API y el frontend, y Spring Data JPA para la persistencia en PostgreSQL.'
+    description: 'API REST para la gestión integral de una cadena hotelera: reservas, habitaciones, servicios y pagos. Arquitectura en capas con DTOs para desacoplar presentación y persistencia, usando Spring Data JPA sobre PostgreSQL.'
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ export const projectsData = [
     category: 'Web App',
     github: 'https://github.com/GAMM95/incidenciasMDE',
     demo: 'https://youtu.be/wqomEDcPOXU',
-    description: 'Sistema web en línea de gestión de incidencias para la Municipalidad Distrital de La Esperanza. Este sistema permite a los usuarios registrar, consultar, mostrar reportes de las incidencias ocurridas en cada área de la entidad descentralizando el proceso de gestión de incidencias Para ingresar al sistema utilice las credenciales username: admin y contraseña: admin123'
+    description: 'Sistema web para la Municipalidad Distrital de La Esperanza que digitaliza y descentraliza la gestión de incidencias informáticas por área. Permite registrar, consultar y generar reportes en tiempo real.'
   },
   {
     id: 3,
@@ -68,8 +68,7 @@ export const projectsData = [
     github: "https://github.com/GAMM95/PrediHipertension",
     installer: apk1,
     demo: "https://youtu.be/SIjINg1BP68", // tu video
-    description:
-      "Aplicativo móvil basado en Machine Learning para la predicción del riesgo de desarrollar Hipertensión Arterial (HTA). Este aplicativo consta de un test de 15 preguntas de factores de riesgo directamente relacionados con la HTA."
+    description: 'Aplicación móvil que predice el riesgo de desarrollar Hipertensión Arterial mediante un modelo de Machine Learning. El usuario responde 15 preguntas sobre factores de riesgo validados clínicamente y obtiene un resultado inmediato.'
   },
   {
     id: 4,
@@ -79,7 +78,7 @@ export const projectsData = [
     technologies: 'Python - Pandas - Scikit learn - Matplotlib - Seaborn - Numpy - SMOTE - ML Algorithms',
     category: 'Otros',
     github: 'https://github.com/GAMM95/PrediHipertension_training_data.git',
-    description: 'Proyecto de predicción del riesgo de desarrollar Hipertensión Arterial en adultos mayores de 18 años usando aprendizaje supervisado. El modelo se entrenó con un dataset de la BRFSS 2015 de 441,455 registros, seleccionando una muestra de 29,729 registros basada en factores de riesgo validados por médicos internistas de Trujillo, ajustados a la realidad de la HTA en Perú. Se evaluó su rendimiento con métricas como Exactitud, Precisión, Recall y F1-score utilizando algoritmos como Random Forest, KNN, Decision Tree, Logistic Regression y XGBoost.'
+    description: 'Pipeline completo de ML para predecir riesgo de HTA en adultos. Dataset: 29,729 registros extraídos de BRFSS 2015, seleccionados con criterios validados por médicos de Trujillo. Se evaluaron Random Forest, KNN, Decision Tree, Logistic Regression y XGBoost con métricas de Precisión, Recall y F1-score.'
   },
   {
     id: 5,
@@ -90,7 +89,7 @@ export const projectsData = [
     category: 'Web App',
     github: 'https://github.com/GAMM95/consulta-transportes',
     // demo: 'http://200.233.44.136/consulta_transporte/',
-    description: 'Sistema web en línea de consultas de transportes para la Sub Gerencia de Transportes, Tránsito y Seguridad Vial de la Municipalidad Distrital de La Esperanza. Este sistema permite a los inspectores de tránsito hacer consultas de las tarjetas de circulación vigentes, papeletas impuestas sin pagar y paraderos establecidos correspondientes al vehiculo menor motorizado ingresando la placa. Para ingresar al sistema utilice las credenciales username: gamm y contraseña: 123456'
+    description: 'Sistema web para inspectores de tránsito de la Municipalidad de La Esperanza. Permite consultar tarjetas de circulación vigentes, papeletas pendientes y paraderos asignados ingresando la placa del vehículo menor motorizado.'
   },
   // {
   //   id: 6,
@@ -124,7 +123,7 @@ export const projectsData = [
     category: 'APIs',
     github: 'https://github.com/GAMM95/vinos_api.git',
     // demo: 'https://api-wine.herokuapp.com/',
-    description: 'API REST desarrollada con Spring Boot para la gestión integral de una tienda de vinos. Permite administrar compras, control de stock en múltiples sucursales y procesos de venta. Implementa arquitectura basada en DTOs para desacoplar la capa de presentación, y utiliza Spring Data JDBC para la persistencia de datos en MySQL.'
+    description: 'API REST para la gestión de una tienda de vinos: compras, control de stock multi-sucursal y proceso de ventas. Arquitectura desacoplada con DTOs y persistencia en MySQL mediante Spring Data JDBC.'
   },
   {
     id: 10,
@@ -135,7 +134,7 @@ export const projectsData = [
     category: 'APIs',
     github: 'https://github.com/GAMM95/AppRentasMdeApiApplication.git',
     // demo: 'https://api-wine.herokuapp.com/',
-    description: 'API REST orientada a la gestión tributaria de una municipalidad. Permite administrar contribuyentes, cálculos de rentas, obligaciones fiscales y seguimiento de pagos. Implementada con Spring Boot y Spring Data JDBC, enfocándose en un acceso eficiente y controlado a SQL Server.'
+    description: 'API REST para la gestión tributaria municipal: contribuyentes, cálculo de rentas, obligaciones fiscales y seguimiento de pagos. Acceso eficiente a SQL Server con Spring Data JDBC y control de operaciones fiscales por rol.'
   },
   {
     id: 11,
@@ -156,7 +155,7 @@ export const projectsData = [
     category: 'Web App',
     github: 'https://github.com/GAMM95/vinos_front.git',
     // demo: 'https://vinos-app.herokuapp.com/',
-    description: 'Aplicación web para la gestión de una tienda de vinos. Permite la administración de productos, categorías, precios, pedidos y ventas. Esta aplicación se desarrolló utilizando Angular 21 y Bootstrap.',
+    description: 'Aplicación web full-stack para una tienda de vinos. Gestiona productos, categorías, precios, pedidos y ventas desde una interfaz construida en Angular con Bootstrap, consumiendo la API REST de Viña Cascas.'
   },
   {
     id: 12,
@@ -168,7 +167,7 @@ export const projectsData = [
     category: 'APIs',
     github: 'https://github.com/GAMM95/veterinaria_api.git',
     // demo: 'https://api-wine.herokuapp.com/',
-    description: 'API REST desarrollada con Spring Boot para la gestión integral de una clínica veterinaria. Permite administrar pacientes, medicamentos, prescripciones, facturación y procesos de venta. Implementa arquitectura basada en DTOs para desacoplar la capa de presentación, y utiliza Spring Data JPA para la persistencia de datos en SQL Server.'
+    description: 'API REST en desarrollo para la gestión integral de una clínica veterinaria: pacientes, historiales, medicamentos, prescripciones y facturación. Implementa OAuth 2.0 con Google, Spring Security y control de acceso por roles sobre SQL Server.'
   }
 ];
 

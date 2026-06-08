@@ -2,6 +2,7 @@ import { TfiClose } from "react-icons/tfi";
 import { BsGithub } from "react-icons/bs";
 import { FaDownload, FaPlay } from "react-icons/fa";
 import ImageCarousel from "../carousel/ImageCarousel";
+import { useEffect } from "react";
 
 const getYoutubeId = (url) => {
   const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/i);
@@ -9,6 +10,14 @@ const getYoutubeId = (url) => {
 };
 
 const Modal = ({ item, onClose }) => {
+  // Bloquear scroll del body cuando el modal está abierto
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   if (!item) return null;
 
   const youtubeId = item.demo ? getYoutubeId(item.demo) : null;
@@ -46,8 +55,8 @@ const Modal = ({ item, onClose }) => {
         {/* HEADER: título + chips + cerrar */}
         <div className="
           flex items-start justify-between gap-4 px-5 py-4 shrink-0"
-         style={{ borderBottom: "0.5px solid var(--accent-border)" }}
-         >
+          style={{ borderBottom: "0.5px solid var(--accent-border)" }}
+        >
           <div className="flex-1 min-w-0">
             <h3 className="text-base font-semibold leading-snug mb-2 text-[var(--title-color)]">
               {item.title}
@@ -83,7 +92,7 @@ const Modal = ({ item, onClose }) => {
             backgroundColor: "var(--body-color)",
             borderBottom: "0.5px solid var(--accent-border)",
           }}
-          >
+        >
           {youtubeId ? (
             <div className="relative w-full aspect-video">
               <iframe
