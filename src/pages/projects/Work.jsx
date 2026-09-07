@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { projectsData, projectsNav } from "./Data";
 import WorksItems from "./WorksItems";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const Work = () => {
   const ITEMS_INICIAL = 3;
@@ -71,19 +72,30 @@ const Work = () => {
           {visibleCount < projects.length ? (
             <button
               onClick={() => setVisibleCount((prev) => prev + 4)}
-              className="btn-ghost"
+              className="btn-ghost inline-flex items-center gap-2"
             >
-              Mostrar más
+              <span>Mostrar más</span>
+              <ChevronDown
+                size={18}
+                strokeWidth={2}
+              />
             </button>
           ) : (
             <button
               onClick={() => {
                 setVisibleCount(ITEMS_INICIAL);
-                document.getElementById("proyectos")?.scrollIntoView({ behavior: "smooth" });
+
+                document
+                  .getElementById("proyectos")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="btn-ghost"
+              className="btn-ghost inline-flex items-center gap-2"
             >
-              Mostrar menos
+              <span>Mostrar menos</span>
+              <ChevronUp
+                size={18}
+                strokeWidth={2}
+              />
             </button>
           )}
         </div>

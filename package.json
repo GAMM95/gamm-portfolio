@@ -10,6 +10,7 @@
     "aos": "^2.3.4",
     "chart.js": "^4.5.1",
     "emailjs-com": "^3.2.0",
+    "lucide-react": "^1.41.0",
     "react": "^19.0.0",
     "react-chartjs-2": "^5.3.1",
     "react-dom": "^19.0.0",

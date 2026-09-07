@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import Modal from "./../../components/modal/Modal";
+import { ArrowUpRight, Construction } from "lucide-react";
 
 const WorksItems = ({ item }) => {
   const [modal, setModal] = useState(false);
@@ -36,14 +37,21 @@ const WorksItems = ({ item }) => {
 
           {/* Badge en desarrollo */}
           {item.status === "en_progreso" && (
-            <span className="
-              absolute top-2 left-2 z-20
-              bg-yellow-400/90 backdrop-blur-sm
-              text-black text-xs font-semibold
-              px-3 py-1 rounded-full shadow-md
-              dark:bg-yellow-400/15 dark:text-yellow-300 dark:border dark:border-yellow-400/30
-            ">
-              🚧 En desarrollo
+            <span
+              className="
+      absolute top-2 left-2 z-20
+      inline-flex items-center gap-1.5
+      px-3 py-1.5
+      rounded-full
+      bg-yellow-400
+      text-yellow-950
+      text-xs font-semibold
+      border border-yellow-500
+      shadow-lg shadow-black/20
+    "
+            >
+              <Construction size={14} strokeWidth={2.5} />
+              <span>En desarrollo</span>
             </span>
           )}
 
@@ -94,8 +102,8 @@ const WorksItems = ({ item }) => {
 
         {/* Footer */}
         <div className="project-card__footer">
-          <span className="project-card__cat">{item.category}</span>
-          <span className="project-card__arrow">↗</span>
+          <span className="project-card__cat"> {item.category} </span>
+          <span className="project-card__arrow"> <ArrowUpRight size={18} strokeWidth={2} /> </span>
         </div>
       </div>
 
