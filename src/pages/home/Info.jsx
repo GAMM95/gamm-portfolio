@@ -1,6 +1,6 @@
 import HandSVG from "../../assets/icons/hand.svg";
 import FileSVG from "../../assets/icons/files.svg";
-import CV_GAMM from "../../assets/doc/CV_Jhonatan_Mantilla.pdf";
+import CV_GAMM from "../../assets/doc/CV_JhonatanMantilla.pdf";
 import { Typewriter } from "react-simple-typewriter";
 
 const Data = () => {
@@ -43,8 +43,8 @@ const Data = () => {
         relacionales. Complemento con frontend en React, Angular y Tailwind CSS,
         y desarrollo móvil con Flutter.{" "}
         <br />
-        Me enfoco en arquitecturas limpias y código mantenible, orientado siempre
-        a resultados concretos.
+        Me interesa construir soluciones de software con código limpio,
+        arquitecturas mantenibles y buenas prácticas de desarrollo.
       </p>
 
       {/* Boton de descargar CV */}
