@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gamm-portfolio/static/css/main.d2f66168.css",
-    "main.js": "/gamm-portfolio/static/js/main.e4c10cb6.js",
+    "main.js": "/gamm-portfolio/static/js/main.8d22b4e6.js",
     "static/media/PrediHipertension.apk": "/gamm-portfolio/static/media/PrediHipertension.43633968bc71c328e34a.apk",
     "static/media/APIHotel.png": "/gamm-portfolio/static/media/APIHotel.08d7215799178e317f5a.png",
     "static/media/APIWine.png": "/gamm-portfolio/static/media/APIWine.d46857a1667b0497c5e8.png",
@@ -17,7 +17,7 @@
     "static/media/viña8.png": "/gamm-portfolio/static/media/viña8.4fe1592bef98c794dd64.png",
     "static/media/incidencias7.png": "/gamm-portfolio/static/media/incidencias7.8e51cf8838875d358396.png",
     "static/media/incidencias4.png": "/gamm-portfolio/static/media/incidencias4.81aa71016b596afa1c79.png",
-    "static/media/CV_Jhonatan_Mantilla.pdf": "/gamm-portfolio/static/media/CV_Jhonatan_Mantilla.613b6baced830042524a.pdf",
+    "static/media/CV_JhonatanMantilla.pdf": "/gamm-portfolio/static/media/CV_JhonatanMantilla.7fa144b452c220e8795a.pdf",
     "static/media/incidencias5.png": "/gamm-portfolio/static/media/incidencias5.588c85b14ff84fedae92.png",
     "static/media/viña3.png": "/gamm-portfolio/static/media/viña3.a30b46f1fa1e1985662f.png",
     "static/media/viña5.png": "/gamm-portfolio/static/media/viña5.8fbd2662395b6ab63348.png",
@@ -46,10 +46,10 @@
     "index.html": "/gamm-portfolio/index.html",
     "static/media/tailwindIcon.svg": "/gamm-portfolio/static/media/tailwindIcon.03fdecbfd26561a058e76b84d95184a7.svg",
     "main.d2f66168.css.map": "/gamm-portfolio/static/css/main.d2f66168.css.map",
-    "main.e4c10cb6.js.map": "/gamm-portfolio/static/js/main.e4c10cb6.js.map"
+    "main.8d22b4e6.js.map": "/gamm-portfolio/static/js/main.8d22b4e6.js.map"
   },
   "entrypoints": [
     "static/css/main.d2f66168.css",
-    "static/js/main.e4c10cb6.js"
+    "static/js/main.8d22b4e6.js"
   ]
 }
